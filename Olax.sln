@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Olax", "Olax\Olax.csproj", "{3A1DACA4-7981-42A7-9F11-F365842AF666}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{43C8C75A-D79E-489F-94AE-EF43C9343963}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todo", "Todo\Todo.csproj", "{26D00D56-39E6-4067-A18C-6A1639D71FB5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,12 @@ Global
 		{3A1DACA4-7981-42A7-9F11-F365842AF666}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A1DACA4-7981-42A7-9F11-F365842AF666}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A1DACA4-7981-42A7-9F11-F365842AF666}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26D00D56-39E6-4067-A18C-6A1639D71FB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26D00D56-39E6-4067-A18C-6A1639D71FB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26D00D56-39E6-4067-A18C-6A1639D71FB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26D00D56-39E6-4067-A18C-6A1639D71FB5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{26D00D56-39E6-4067-A18C-6A1639D71FB5} = {43C8C75A-D79E-489F-94AE-EF43C9343963}
 	EndGlobalSection
 EndGlobal

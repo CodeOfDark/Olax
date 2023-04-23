@@ -10,6 +10,19 @@
         "runtime": {
           "lib/net6.0/Newtonsoft.Json.dll": {}
         }
+      },
+      "Olax/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "compile": {
+          "bin/placeholder/Olax.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Olax.dll": {}
+        }
       }
     }
   },
@@ -43,11 +56,16 @@
         "newtonsoft.json.nuspec",
         "packageIcon.png"
       ]
+    },
+    "Olax/1.0.0": {
+      "type": "project",
+      "path": "../Olax/Olax.csproj",
+      "msbuildProject": "../Olax/Olax.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Newtonsoft.Json >= 13.0.3"
+      "Olax >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -58,11 +76,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Olax\\Olax\\Olax.csproj",
-      "projectName": "Olax",
-      "projectPath": "F:\\Olax\\Olax\\Olax.csproj",
+      "projectUniqueName": "F:\\Olax\\Todo\\Todo.csproj",
+      "projectName": "Todo",
+      "projectPath": "F:\\Olax\\Todo\\Todo.csproj",
       "packagesPath": "C:\\Users\\Nozhdar\\.nuget\\packages\\",
-      "outputPath": "F:\\Olax\\Olax\\obj\\",
+      "outputPath": "F:\\Olax\\Todo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -83,7 +101,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "F:\\Olax\\Olax\\Olax.csproj": {
+              "projectPath": "F:\\Olax\\Olax\\Olax.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -95,12 +117,6 @@
     "frameworks": {
       "net6.0": {
         "targetAlias": "net6.0",
-        "dependencies": {
-          "Newtonsoft.Json": {
-            "target": "Package",
-            "version": "[13.0.3, )"
-          }
-        },
         "imports": [
           "net461",
           "net462",

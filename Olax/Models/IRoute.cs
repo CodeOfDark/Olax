@@ -1,23 +1,42 @@
-﻿using Olax.Enums;
+﻿using System.Net;
+using Olax.Structs;
 
 namespace Olax.Models;
 
 public interface IRoute
 {
     /// <summary>
-    /// Path which means the route of the http url.
+    /// The route of the http url.
     /// </summary>
-    string Path { get; set; }
+    string Route { get; }
+
+    /// <summary>
+    /// Operation id of the request.
+    /// </summary>
+    string OperationId { get; }
+    
+    /// <summary>
+    /// Summary of the route
+    /// </summary>
+    string Summary { get; }
+    
+    /// <summary>
+    /// Request type.
+    /// </summary>
+    HttpMethod HttpMethod { get; }
     
     /// <summary>
     /// Requested parameters from the chat-gpt user.
     /// </summary>
-    Dictionary<string, Types> Parameters { get; set; }
-    
-    /// <summary>
-    /// Requested body from the chat-gpt user.
-    /// </summary>
-    Dictionary<string, Types> Body { get; set; }
+    List<Option> Parameters { get; }
 
-    void Execute(Olax olex, Dictionary<string, Types> parameters, Dictionary<string, Types> body);
+    /// <summary>
+    /// Executing the operation
+    /// </summary>
+    /// <param name="olaxContext">context.</param>
+    /// <param name="httpListenerRequest">the listener.</param>
+    /// <param name="parameters">received parameters from the gpt-user.</param>
+    /// <returns>Returns the response to chat-gpt.</returns>
+    Response Execute(OlaxContext olaxContext, HttpListenerRequest httpListenerRequest, List<Option> parameters);
+
 }
