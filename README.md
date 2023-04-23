@@ -4,12 +4,10 @@
 
 ## Why Olax?
 
----
 Olax helps you build and host a Chat-GPT plugin with minimal effort, and I assume this is the first library that does so.
 
 ## Usage
 
----
 * Create a C# project.
 * Setup a config
 ```csharp
