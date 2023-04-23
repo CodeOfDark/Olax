@@ -12,7 +12,7 @@ public static class Program
     {
         var config = new Config()
         {
-            Logo = @"your plugin logo",
+            Logo = @"C:\Users\Nozhdar\Desktop\956942871267799050.webp",
             Version = "v1",
             PluginName = "TODO plugin",
             ModelName = "todo",
@@ -22,7 +22,6 @@ public static class Program
             ContactEmail = "test@test.com",
             LegalUrlInfo = "https://www.nozhdar.com"
         };
-        
         var olax = new OlaxContext(config, false);
         olax.Routes.Add(new GetTodosRoute());
         olax.Routes.Add(new AddTodoRoute());
