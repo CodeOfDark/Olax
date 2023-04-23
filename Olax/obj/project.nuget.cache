@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "VEOcix1QadGIbkY7zHDWKEkqj5V+zTpLG6+SrM1+Y0+NVVc+I/F3RH2i71jvdfvrQlQIVlyPTE2PFKzreXMizA==",
+  "success": true,
+  "projectFilePath": "F:\\Olax\\Olax\\Olax.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Nozhdar\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
